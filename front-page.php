@@ -1,6 +1,6 @@
 <?php
 /**
- * Шаблон страницы любого архива
+ * Шаблон главной страницы
  * 
  * @package WordPress
  * @author Alexandr Toropov <toropovsite@yandex.ru>
