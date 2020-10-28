@@ -39,4 +39,10 @@ if (function_exists( 'add_theme_support' )) {
 	add_theme_support( 'custom-background' );  // настраивыемый фон
 }
 
+function ale_load_assets() {
+	wp_enqueue_style( 'ale_style', get_stylesheet_uri() );
+}
+
+add_action( 'wp_enqueue_scripts', 'ale_load_assets' );
+
 ?>
