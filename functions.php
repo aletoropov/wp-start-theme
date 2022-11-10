@@ -41,6 +41,7 @@ if (function_exists( 'add_theme_support' )) {
 
 function ale_load_assets() {
 	wp_enqueue_style( 'ale_style', get_stylesheet_uri() );
+	wp_enqueue_script( 'ale_script', get_template_directory_uri(  ) . '/js/scripts.js' );
 }
 
 add_action( 'wp_enqueue_scripts', 'ale_load_assets' );
