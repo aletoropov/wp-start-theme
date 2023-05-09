@@ -30,17 +30,15 @@ if ( !is_admin() ) {
 }
 
 //Добавление поддержку в тему
-if (function_exists( 'add_theme_support' )) {
-	add_theme_support( 'menus' );              // поддержка меню   
-	add_theme_support( 'post-thumbnails' );    // миниатюры
-	add_theme_support( 'title-tag' );          // позволяет управлять заголовком документа
-	add_theme_support( 'html5' );              // поддержка HTML5 для форм 
-	add_theme_support( 'custom-logo' );        // настраиваемый логотип
-	add_theme_support( 'custom-background' );  // настраивыемый фон
-}
+add_theme_support( 'menus' );              // поддержка меню   
+add_theme_support( 'post-thumbnails' );    // миниатюры
+add_theme_support( 'title-tag' );          // позволяет управлять заголовком документа
+add_theme_support( 'html5' );              // поддержка HTML5 для форм 
+add_theme_support( 'custom-logo' );        // настраиваемый логотип
+add_theme_support( 'custom-background' );  // настраивыемый фон
 
 function ale_load_assets() {
-	wp_enqueue_style( 'ale_style', get_stylesheet_uri() );
+	wp_enqueue_style( 'ale_style', get_stylesheet_uri( ) );
 	wp_enqueue_script( 'ale_script', get_template_directory_uri(  ) . '/js/scripts.js' );
 }
 
