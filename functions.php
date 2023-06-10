@@ -39,6 +39,7 @@ add_theme_support( 'custom-background' );  // настраивыемый фон
 
 function ale_load_assets() {
 	wp_enqueue_style( 'ale_style', get_stylesheet_uri( ) );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri(  ) . DIRECTORY_SEPARATOR . 'css' . DIRECTORY_SEPARATOR . 'bootstrap.min.css' , [], '5.3' );
 	wp_enqueue_script( 'ale_script', get_template_directory_uri(  ) . '/js/scripts.js' );
 }
 
